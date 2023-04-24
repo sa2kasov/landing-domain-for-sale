@@ -1,0 +1,250 @@
+@import "normalize.css";
+/*@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');*/
+
+@font-face {
+	font-family: Quantico-Regular;
+	/*src: url('../fonts/Quantico-Regular.ttf');*/
+}
+
+body {
+	background-color: #1390A6;
+	font: 400 32px 'Yanone Kaffeesatz', Arial, sans-serif;
+	color: #090909;
+}
+
+p {
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+main {
+	background-image: radial-gradient(circle closest-side,
+		#8DD6E5 51%, #76C9D9 0%,
+		#76C9D9 68%, #5AB9CB 0%,
+		#5AB9CB 85%, #38A5BA 0%,
+		#38A5BA 100%, #1390A7 0%,
+		#1390A6 120%, #1390A6 0%
+	);
+	margin: 0 auto;
+	max-width: 980px;
+	padding: 20px 0 5px;
+}
+
+/* Header */
+header {
+	background-image: url("../img/cloud.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 158px;
+	margin: 0 auto;
+	padding: 26px 0 56px 0;
+	max-width: 410px;
+}
+
+header p:first-child {
+	margin-top: 5px;
+}
+
+.domainName {
+	background-color: rgba(202, 202, 202, 0.3);
+	border-radius: 30px;
+	box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.07);
+	font-size: 34px;
+	height: 34px;
+	margin: 16px auto 20px;
+	max-width: 320px;
+	outline: none;
+	padding: 10px 8px 6px;
+}
+
+.domainName::before {
+	background-image: url("../img/check.png");
+	content: '';
+	display: inline-block;
+	height: 30px;
+	margin-left: -40px;
+	position: absolute;
+	width: 30px;
+}
+
+.isAvailable span {
+	color: #6AC251;
+}
+
+/* Price section */
+.price * {
+	display: block;
+}
+
+.price p:first-child {
+	margin: -15px 20px 0 0;
+}
+
+.price p:last-child {
+	background-clip: padding-box;
+	border: 42px solid #000;
+	border-image-repeat: round;
+	border-image-slice: 42;
+	border-image-source: url("../img/price-bg.png");
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 0;
+	margin: 20px auto;
+	max-width: 257px;
+	place-content: center;
+}
+
+.price s {
+	color: #F00;
+	font: bold 24px Arial, sans-serif;
+	margin-top: -25px;
+}
+
+.price b {
+	color: #39B100;
+	font: bold 48px Arial, sans-serif;
+}
+
+.offerExpired {
+	color: red;
+	font: 600 28px 'Yanone Kaffeesatz', sans-serif;
+	margin-bottom: -30px;
+	z-index: 1;
+}
+
+/* Timer */
+.timer {
+	margin: 20px 0 10px;
+}
+
+.timer > p {
+	margin: 20px 0;
+}
+
+/* Salesman */
+.salesman {
+	max-width: 394px;
+	position: absolute;
+	right: 62%;
+	top: 11%;
+	width: 43%;
+}
+
+.salesman img {
+	width: 100%;
+}
+
+.hints {
+	background-color: white;
+	border-radius: 100px;
+	font: 18px/20px 'Yanone Kaffeesatz', Arial, sans-serif;
+	left: 23%;
+	position: absolute;
+	text-overflow: ellipsis;
+	top: 30%;
+	width: 50%;
+	z-index: 3;
+}
+
+.hints::before {
+	border-bottom: 11px solid white;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	content: '';
+	display: block;
+	height: 0;
+	left: calc(50% - 10px);
+	position: absolute;
+	top: -10px;
+	width: 0;
+}
+
+.hints p {
+	padding: 15px 25px;
+}
+
+/* Footer */
+.socials {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin: 15px;
+	padding: 0;
+}
+
+.socials li {
+	margin-left: 10px;
+}
+
+.socials a {
+	display: inline-block;
+	height: 61px;
+	width: 51px;
+	transition: all ease-in-out 700ms;
+}
+
+.socials a:hover {
+	transform: rotate(360deg);
+}
+
+.email {
+	background-image: url("../img/e-mail.png");
+}
+
+.phone {
+	background-image: url("../img/phone.png");
+}
+
+.whatsapp {
+	background-image: url("../img/whatsapp.png");
+}
+
+.telegram {
+	background-image: url("../img/telegram.png");
+}
+
+/* Media Queries */
+@media (max-width: 895px) {
+	/* Salesman */
+	.salesman {
+		top: 25%;
+	}
+}
+
+@media (max-width: 690px) {
+	/* Salesman */
+	.hints p {
+		padding: 15px 10px;
+	}
+}
+
+@media (max-width: 530px) {
+	/* Gradient */
+	main {
+		background-image: radial-gradient(circle at top,
+		#8DD6E5 30.5%, #76C9D9 0%,
+		#76C9D9 39%, #5AB9CB 0%,
+		#5AB9CB 47%, #38A5BA 0%,
+		#38A5BA 55.5%, #1390A7 0%,
+		#1390A6 65%, #0f7082 0%
+		);
+		height: 100vh;
+	}
+
+	/* Salesman */
+	.salesman {
+		display: none;
+	}
+}
+
+@media (max-width: 390px) {
+	/* Header */
+	header {
+		padding-bottom: 36px;
+	}
+	.domainName {
+		margin: 12px auto 14px;
+	}
+}

@@ -1,0 +1,49 @@
+.clock {
+  margin: 45px 0 20px;
+}
+
+.flip-clock {
+  justify-content: center;
+  font-size: 1.1vw;
+}
+
+.flip-clock .flip-clock-group .flip-clock-label {
+  color: #fff;
+  display: block;
+  font: 20px Quantico-Regular, 'Yanone Kaffeesatz', sans-serif;
+  height: 1.7em;
+  text-transform: uppercase;
+}
+
+.flip-clock .flip-clock-group .flip-clock-list .flip-clock-list-item-inner > .top, .flip-clock .flip-clock-group .flip-clock-list .flip-clock-list-item-inner > .bottom {
+  background-color: #14424A;
+}
+
+.flip-clock .flip-clock-divider:before,
+.flip-clock .flip-clock-divider:after {
+  background: #14424A;
+}
+
+@media (max-width: 1130px) {
+  .flip-clock {
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .flip-clock {
+    font-size: 1.4vw;
+  }
+}
+
+@media (max-width: 530px) {
+  .flip-clock {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 470px) {
+  .flip-clock {
+    font-size: 2.2vw;
+  }
+}
