@@ -1,10 +1,10 @@
 # Domain for Sale Landing
 
+This repository contains the source code and files for a simple landing page to promote the sale of a domain.
+
 <div style="text-align:center">
   <img src="./public/cover.jpg" alt="Domain Landing Cover">
 </div>
-
-This repository contains the source code and files for a simple landing page to promote the sale of a domain.
 
 ## Table of Contents
 
@@ -12,6 +12,7 @@ This repository contains the source code and files for a simple landing page to 
 - [Configuration](#configuration)
   - [Default fields](#default-fields)
   - [Domain fields](#domain-fields)
+  - [Skip a contact info](#skip-a-contact-info)
 - [Adding new language](#adding-new-language)
 - [Contributing](#contributing)
 - [License](#license)
@@ -102,13 +103,15 @@ export const config = {
 
 | Field         | Description     | Example                     |
 |---------------|-----------------|-----------------------------|
-| name          | Domain name     | 'example.com'               |
-| expiration    | Expiration date | '2024-04-24T18:55:00+06:00' |
+| name          | Domain name     | "example.com"               |
+| expiration    | Expiration date | "2024-04-24T18:55:00+06:00" |
 | price         | Domain price    | 100000                      |
 | increasePrice | Price increase  | 1000                        |
-| hints         | Array of hints  | [`hint1`, `hint 2`, `...`]  |
+| hints         | Array of hints  | ["hint1", "hint 2", "..."]  |
 
 **Plus all fields from the default field. Any field in the domain field overrides the default values.**
+
+### Skip a contact info
 
 If you don't want to provide data for any field of contacts, set it to `false`.
 
@@ -130,6 +133,19 @@ Once you have made the necessary changes, you can host the landing page on any w
 ## Adding new language
 
 Create a new language json file in `./src/locales/`. Take an example of the fields to be translated from existing files in the directory, e.g. `en.json`.
+
+В файле `./src/utils/i18n.js` импортируйте файл вашего языка и укажите его в объекте `translations`.
+
+```javascript
+import newTranslations from '../locales/new.json'
+
+const translations = {
+  en: enTranslations,
+  new: newTranslations,
+}
+```
+
+Then in `config.js` set the name of your new language file in the `language` field.
 
 ## Contributing
 
