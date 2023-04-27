@@ -10,8 +10,8 @@ export const config = {
     {
       name: 'example1.com',
       expiration: '2024-04-24T18:55:00+06:00',
-      price: 100000,
-      increasePrice: 1000,
+      price: 20000,
+      increasePrice: 100,
       phone: false,
       whatsapp: '+12345678901',
       telegram: '@username1',

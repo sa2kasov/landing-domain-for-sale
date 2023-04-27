@@ -153,4 +153,4 @@ If you would like to contribute to this project, feel free to submit a pull requ
 
 ## License
 
-This project is licensed under the MIT License. See the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/sa2kasov/domain-for-sale-landing/blob/master/LICENSE) file for details.
+This project is licensed under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/sa2kasov/domain-for-sale-landing/blob/master/LICENSE)
