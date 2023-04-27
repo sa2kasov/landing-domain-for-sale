@@ -134,7 +134,7 @@ Once you have made the necessary changes, you can host the landing page on any w
 
 Create a new language json file in `./src/locales/`. Take an example of the fields to be translated from existing files in the directory, e.g. `en.json`.
 
-В файле `./src/utils/i18n.js` импортируйте файл вашего языка и укажите его в объекте `translations`.
+In the `./src/utils/i18n.js` file, import your language file and define it in the `translations` object.
 
 ```javascript
 import newTranslations from '../locales/new.json'
