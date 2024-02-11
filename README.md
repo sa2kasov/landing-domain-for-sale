@@ -1,6 +1,6 @@
-# Domain for Sale Landing
+# Domain for Sale Landing Page
 
-This repository contains the source code and files for a simple landing page to promote the sale of a domain.
+Unveil your domain's potential with the perfect platform to showcase your domain's value and attract potential buyers. Elevate your sales strategy with this dynamic, Preact-powered landing page solution. Maximize your outreach and accelerate the process of selling your domain name.
 
 <div style="text-align:center">
   <img src="./public/cover.jpg" alt="Domain Landing Cover">

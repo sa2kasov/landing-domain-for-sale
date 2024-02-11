@@ -8,7 +8,7 @@ export const config = {
   telegram: '@username',
   domains: [
     {
-      name: 'example1.com',
+      name: 'example.com',
       expiration: '2024-04-24T18:55:00+06:00',
       price: 20000,
       increasePrice: 100,
@@ -23,7 +23,7 @@ export const config = {
       ]
     },
     {
-      name: 'example2.net',
+      name: 'example.net',
       expiration: '2024-04-25T00:00:00+06:00',
       price: 200000,
       increasePrice: 1500,
@@ -31,7 +31,7 @@ export const config = {
       language: 'en'
     },
     {
-      name: 'example3.org',
+      name: 'example.org',
       expiration: '2024-04-26T12:00:00+06:00',
       price: 300000,
       increasePrice: 2000,
